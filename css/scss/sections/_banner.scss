@@ -1,0 +1,127 @@
+.header-banner-area {
+    background-image: url(../../../images/banner-index.png);
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+}
+
+.header-banner-left {
+    height: 100vh;
+    white-space: nowrap;
+
+    .text1 {
+        @include styleText(4rem, $white, 149.38%, $sfPro);
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    .text2 {
+        font-style: normal;
+        font-weight: 300;
+        margin-left: auto;
+        @include styleText(1.875rem, $white, 149.38%, $sfPro);
+    }
+    
+    .text3 {
+        font-weight: bold;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        letter-spacing: 2px;
+        @include styleText(3.875rem, $white, 149.38%, $sfPro);
+    }
+
+    .header-btn {
+        width: 226px;
+        height: 45px;
+        border-radius: 40px;
+        border: 1px solid $white;
+        background: transparent;
+        color: $white;
+        margin-left: auto;
+        margin-top: 24px;
+    }
+}
+
+.header-banner-right {
+    .banner-image {
+        width: 100%;
+        height: 742px;
+        object-fit: cover;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .header-banner-area  {
+        background-position: 52%;
+        min-height: 70vh;
+    }
+    
+    .header-banner-left {
+        .text2, .header-btn {
+            margin-left: 20%;
+        }
+    }
+}
+
+@media screen and (max-width: 768px){
+    .header-banner-area  {
+        background-position: 52%;
+        min-height: 70vh;
+    }
+
+    .header-banner-left {
+        width: 100vw;
+        padding: 0 30px;
+        margin-left:  -15px;
+        height: 70vh;
+        background-color: rgba($black, 0.5);
+
+        .text1 {
+            @include styleText(3.375rem, $white, 149.38%, $sfPro);
+        }
+
+        .text2 {
+            @include styleText(1.75rem, $white, 149.38%, $sfPro);
+        }
+
+        .text3 {
+            @include styleText(3.25rem, $white, 149.38%, $sfPro);
+        }
+
+        .header-btn {
+            width: 176px;
+            height: 35px;
+            border-radius: 40px;
+            border: 1px solid $white;
+            margin-left: 20%;
+        }
+        
+    }
+}
+
+@media screen and (max-width: 576px) {
+    
+    .header-banner-left {
+        
+        .text1 {
+            @include styleText(3rem, $white, 149.38%, $sfPro);
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+
+        .text2 {
+            margin-left: 20%;
+            @include styleText(1.25rem, $white, 149.38%, $sfPro);
+        }
+
+        .text3 {
+            @include styleText(2.875rem, $white, 149.38%, $sfPro);
+        }
+
+        .header-btn {
+            width: 176px;
+            height: 35px;
+            border-radius: 40px;
+            border: 1px solid $white;
+            margin-left: 20%;
+        }
+    }
+}

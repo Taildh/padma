@@ -1,0 +1,250 @@
+.skin-section1-area {
+    padding-bottom: 60px;
+}
+
+.skin-section1-head {
+    text-align: center;
+    padding: 50px 0 30px 0;
+
+    h1 {
+        font-weight: bold;
+        @include styleText(30px, $blueDark, 46px, $sfProHeavy);
+    }
+}
+.skin-section1-list {
+    row-gap: 55px;
+
+    .skin-section1-item {
+        padding: 35px 0;
+        background: #f8fafd;
+        border-radius: 8px;
+
+        &-link {
+            display: block;
+            text-align: center;
+            margin-top: 10px;
+            font-weight: bold;
+            @include styleText(16px, $blueDark, 18px, $sfPro);
+        }
+    }
+}
+
+.skin-banner-area {
+    min-height: 572px;
+    background-repeat: no-repeat;
+    background-image: url("../../../images/skin-banner.png");
+    background-size: cover;
+    background-position: 50%;
+
+    .skin-banner-content {
+        .skin-banner-text-box {
+            margin-top: 200px;
+            background: $blueDark;
+            position: relative;
+            padding: 35px 70px 25px 60px;
+            clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%);
+            border-radius: 0 20px 30px 0;
+
+            &-title {
+                font-weight: bold;
+                letter-spacing: 0.125em;
+                @include styleText(3.125rem, $white, 29px, $sfProHeavy);
+            }
+
+            &-sec-title {
+                margin-top: 15px;
+                @include styleText(2rem, $white, 29px, $sfPro);
+
+                span {
+                    font-family: $sfProHeavy;
+                }
+            }
+        }
+    }
+}
+
+.skin-section2-left-news-wrap {
+    &-head {
+        @extend .news-head-wrap;
+    }
+
+    &-body {
+        margin-top: 30px;
+
+        .main-item {
+            .title-link {
+                font-weight: bold;
+                @include styleText(1rem, $black, 146.69%, $sfPro);
+            }
+
+            .short-desc {
+                margin-top: 20px;
+                @include styleText(1rem, $black, 146.69%, $sfPro);
+            }
+        }
+
+        .sub-items {
+            margin-top: 30px;
+
+            .item {
+                margin-top: 20px;
+                gap: 20px;
+
+                .text-box {
+                    padding-right: 45px;
+
+                    .title-link {
+                        font-weight: bold;
+                        @include styleText(1rem, $black, 146.69%, $sfPro);
+                    }
+
+                    .short-desc {
+                        margin-top: 10px;
+                        @include styleText(1rem, $black, 146.69%, $sfPro);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.skin-section2-area {
+    margin-bottom: 60px;
+}
+
+.skin-section2-left-trending-wrap {
+    @extend .trending-wrap;
+
+    .trending-items {
+        margin-top: 30px;
+
+        .item {
+            margin-top: 20px;
+
+            .item-image {
+                width: 100%;
+            }
+
+            .text-box {
+                .title-link {
+                    font-weight: bold;
+                    @include styleText(1rem, $black, 146.69%, $sfPro);
+                }
+
+                .short-desc {
+                    margin-top: 10px;
+                    @include styleText(1rem, $black, 146.69%, $sfPro);
+                }
+            }
+        }
+    }
+}
+
+.skin-section2-right {
+    &-head {
+        @extend .news-head-wrap;
+    }
+
+    &-body {
+        margin-top: 30px;
+
+        &-list {
+            .item {
+                margin-top: 20px;
+                display: flex;
+                gap: 10px;
+
+                &-image {
+                    width: 40%;
+                }
+
+                .text-box {
+                    .title-link {
+                        font-weight: bold;
+                        @include styleText(1rem, $black, 146.69%, $sfPro);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px){
+    .skin-banner-area {
+        min-height: 500px;
+        background-position: 70%;
+    
+        .skin-banner-content {
+            .skin-banner-text-box {
+                
+                padding: 35px 20px 25px 10px;
+                &-title {
+                    font-weight: bold;
+                    letter-spacing: 0.125em;
+                    @include styleText(2.75rem, $white, 29px, $sfProHeavy);
+                }
+    
+                &-sec-title {
+                    @include styleText(1.75rem, $white, 29px, $sfPro);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .skin-section1-head {
+        padding: 30px 0;
+    }
+
+    .skin-banner-area {
+        min-height: 500px;
+        background-position: 70%;
+    
+        .skin-banner-content {
+            .skin-banner-text-box {
+                margin-left: 10px;
+
+                &-title {
+                    font-weight: bold;
+                    letter-spacing: 0.125em;
+                    @include styleText(2rem, $white, 29px, $sfProHeavy);
+                }
+    
+                &-sec-title {
+                    @include styleText(1rem, $white, 29px, $sfPro);
+                }
+            }
+        }
+    }
+    
+    .skin-section2-left-news-wrap {
+        &-body {
+            .main-item {
+                .title-link {
+                    font-weight: bold;
+                    @include styleText(1rem, $black, 146.69%, $sfPro);
+                }
+
+                .short-desc {
+                    margin-top: 20px;
+                    @include styleText(1rem, $black, 146.69%, $sfPro);
+                }
+            }
+
+            .sub-items {
+                .item {
+                    &-image {
+                        width: 150px;
+                        object-fit: cover;
+                    }
+                    .text-box {
+                        height: 150px;
+                        overflow: hidden;
+                        padding: 0;
+                    }
+                }
+            }
+        }
+    }
+}

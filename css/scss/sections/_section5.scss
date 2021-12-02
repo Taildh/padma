@@ -1,0 +1,158 @@
+.section5 {
+    padding: 55px 0 95px 0;
+}
+
+.most-view-wrap {
+    margin-top: 80px;
+}
+
+.most-view-head {
+    border-bottom: 1px solid #dfdfdf;
+
+    .title-heading {
+        padding-bottom: 8px;
+        text-transform: uppercase;
+        letter-spacing: 0.11em;
+        @include styleText(24px, $blueDark, "146.69%", $sfProHeavy);
+    }
+}
+
+.most-view-body {
+    margin-top: 30px;
+
+    .most-view-list-item {
+        display: flex;
+        gap: 10px;
+
+        .most-view-list-item-text {
+            flex-basis: 50%;
+
+            .title-link {
+                text-decoration: none;
+                font-weight: bold;
+                @include styleText(16px, $black, "146.69%", $sfPro);
+            }
+
+            .short-desc {
+                margin-top: 10px;
+                @include styleText(16px, $black, "146.69%", $sfPro);
+            }
+        }
+    }
+}
+
+.section5-first-content-item {
+    &-text {
+        margin-top: 20px;
+
+        .title-link {
+            text-decoration: none;
+            font-weight: bold;
+            @include styleText(1.25rem, $black, "146.69%", $sfPro);
+        }
+
+        .short-desc {
+            margin-top: 20px;
+            @include styleText(1.25rem, $black, "146.69%", $sfPro);
+        }
+    }
+}
+
+.section5-video-wrap {
+    margin-top: 70px;
+    background-color: #f2f2f2;
+    padding: 20px 20px 0 20px;
+
+    .main-video {
+        position: relative;
+        height: 542px;
+
+        .video {
+            position: absolute;
+            height: 562px;
+            width: 100%;
+        }
+
+        .sub-video {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: white;
+            padding: 20px;
+
+            .sub-video-item {
+                display: flex;
+                gap: 10px;
+
+                &-vd {
+                    width: 100px;
+                    height: 67px;
+                }
+
+                &-title {
+                    font-weight: bold;
+                    @include styleText(0.875rem, $black, 131%, $sfPro);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .section5 {
+        padding: 35px 0 20px 0;
+
+        .most-view-wrap {
+            margin-top: 60px;
+
+            .most-view-body {
+                .most-view-list-item {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+
+    .section5-video-wrap {
+        .main-video {
+            .sub-video {
+                width: 100%;
+            }
+        }
+    }
+
+    .section5-first-content-item {
+        margin-bottom: 30px;
+
+        &-text {
+            margin-top: 10px;
+
+            .title-link {
+                @include styleText(1rem, $black, "146.69%", $sfPro);
+            }
+
+            .short-desc {
+                margin-top: 10px;
+                @include styleText(1rem, $black, "146.69%", $sfPro);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .section5-first-content-item-list {
+        row-gap: 30px;
+    }
+
+    .main-video {
+        .video {
+            width: 100%;
+            height: auto;
+        }
+
+        .sub-video {
+            display: none;
+        }
+    }
+}

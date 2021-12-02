@@ -1,0 +1,47 @@
+.sub-header {
+    padding: 25px 0;
+    background-color: $grayLighter;
+    position: relative;
+}
+
+.sub-header-right {
+    gap: 20px;
+    align-items: center;
+
+    &-title {
+        font-weight: 600;
+        @include styleText (30px, $blue, 36px, $sfPro);
+    }
+
+    &-image {
+        border-radius: 50%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .sub-header-right {
+        margin-top: 10px;
+
+        &-image {
+            display: none;
+        }
+    }
+    
+}
+
+@media screen and (max-width: 576px) {
+    .sub-header {
+        padding: 25px 10px;
+    }
+
+    .sub-header-right {
+
+        &-title {
+            @include styleText (24px, $blue, 36px, $sfPro);
+        }
+
+        &-image {
+            display: none;
+        }
+    }
+}

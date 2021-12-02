@@ -1,0 +1,59 @@
+.contact-area {
+    padding: 60px 0;
+}
+
+.contact-heading {
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.11em;
+    margin-bottom: 30px;
+    @include styleText (1.5rem, $blueDark, 146.69%, $sfProHeavy);
+}
+
+.left-contact-info {
+    .left-contact-item {
+        margin-top: 31px;
+        padding-right: 30%;
+        display: flex;
+        gap: 18px;
+
+        img {
+            width: 30px;
+        }
+
+        &-text {
+            &-title {
+                @include styleText (1rem, $blueDark, 146.69%, $sfProHeavy);
+            }
+
+            &-content {
+                @include styleText (1rem, $black, 146.69%, $sfPro);
+            }
+        }
+    }
+}
+
+.contact-btn {
+    background-color: $blueDark;
+    border-radius: 4px;
+    text-transform: uppercase;
+    padding: 18px 50px;
+    cursor: pointer;
+    font-weight: bold;
+    @include styleText (0.875rem, $white, 146.69%, $sfPro);
+
+
+    &:hover {
+        color: $white;
+    }
+}
+
+.maps {
+    margin-bottom: 50px;
+}
+
+@media screen and (max-width: 876px) {
+    .left-contact-info {
+        margin-bottom: 30px;
+    }
+}

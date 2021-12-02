@@ -1,0 +1,270 @@
+.section2-area {
+    background-image: url("../../../images/section2.png");
+    min-height: 860px;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+}
+
+.section2-head {
+    padding-top: 65px;
+
+    &-first-heading {
+        text-transform: uppercase;
+        letter-spacing: 0.11em;
+        @include styleText(24px, $white, 146.69%, $sfPro);
+    }
+
+    &-sec-heading {
+        margin-top: 18px;
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 0.03em;
+        @include styleText(30px, $white, 146.69%, $sfProHeavy);
+    }
+
+    &-hotline {
+        margin-top: 18px;
+        text-transform: uppercase;
+        letter-spacing: 0.03em;
+        @include styleText(24px, $white, 146.69%, $sfPro);
+    }
+}
+
+.section2-body {
+    .section2-body-wrap {
+        inset: 0;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+
+        .section2-body-item-list {
+            flex-basis: 28%;
+
+            .list-item-left {
+                margin-top: 45px;
+                display: flex;
+                align-items: flex-start;
+
+                img {
+                    order: 1;
+                    width: 30px;
+                }
+
+                &-text {
+                    order: 2;
+
+                    &-title {
+                        font-weight: bold;
+                        letter-spacing: 0.03em;
+                        position: relative;
+                        @include styleText(20px, $white, 146.69%, $sfPro);
+
+                        &:after {
+                            content: " ";
+                            position: absolute;
+                            top: calc(100% + 8px);
+                            left: 0;
+                            height: 1px;
+                            width: 25%;
+                            background-color: $white;
+                        }
+                    }
+
+                    &-short-desc {
+                        margin-top: 20px;
+                        letter-spacing: 0.03em;
+                        @include styleText(16px, $white, 146.69%, $sfPro);
+                    }
+                }
+            }
+
+            .list-item-right {
+                margin-top: 45px;
+                display: flex;
+                align-items: flex-start;
+
+                img {
+                    order: 1;
+                    width: 30px;
+                }
+
+                &-text {
+                    &-title {
+                        font-weight: bold;
+                        letter-spacing: 0.03em;
+                        position: relative;
+                        text-align: right;
+                        @include styleText(20px, $white, 146.69%, $sfPro);
+
+                        &:after {
+                            content: " ";
+                            position: absolute;
+                            top: calc(100% + 8px);
+                            right: 0;
+                            height: 1px;
+                            width: 25%;
+                            background-color: $white;
+                        }
+                    }
+
+                    &-short-desc {
+                        text-align: right;
+                        margin-top: 20px;
+                        letter-spacing: 0.03em;
+                        @include styleText(16px, $white, 146.69%, $sfPro);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.section2-item {
+    gap: 20px;
+}
+
+@media screen and (max-width: 992px) {
+    .section2-area {
+        min-height: 760px;
+    }
+
+    .section2-body {
+        padding-top: 40px;
+        .section2-body-wrap {
+            align-items: center;
+            padding-bottom: 40px;
+
+            .section2-body-item-list {
+                flex-basis: 28%;
+
+                .list-item-left {
+                    margin-top: 20px;
+
+                    img {
+                        width: 20px;
+                    }
+
+                    &-text {
+                        &-title {
+                            font-weight: bold;
+                            @include styleText(1rem, $white, 130%, $sfPro);
+
+                            &:after {
+                                top: calc(100% + 4px);
+                            }
+                        }
+
+                        &-short-desc {
+                            margin-top: 10px;
+                            @include styleText(0.875rem, $white, 130%, $sfPro);
+                        }
+                    }
+                }
+
+                .list-item-right {
+                    margin-top: 20px;
+
+                    img {
+                        width: 20px;
+                    }
+
+                    &-text {
+                        &-title {
+                            @include styleText(1rem, $white, 130%, $sfPro);
+
+                            &:after {
+                                top: calc(100% + 4px);
+                            }
+                        }
+
+                        &-short-desc {
+                            margin-top: 10px;
+                            @include styleText(0.875rem, $white, 130%, $sfPro);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .section2-area {
+        min-height: 550px;
+        background-size: cover;
+    }
+
+    .section2-head {
+        padding-top: 30px;
+        &-first-heading {
+            @include styleText(1rem, $white, 146.69%, $sfPro);
+        }
+
+        &-sec-heading {
+            margin-top: 10px;
+            @include styleText(1.125rem, $white, 146.69%, $sfPro);
+        }
+
+        &-hotline {
+            margin-top: 10px;
+            @include styleText(1rem, $white, 146.69%, $sfPro);
+        }
+    }
+
+    .section2-body {
+        .section2-body-wrap {
+            .section2-body-item-list {
+                flex-basis: 30%;
+
+                .list-item-left {
+                    margin-top: 20px;
+
+                    img {
+                        display: none;
+                    }
+
+                    &-text {
+                        &-title {
+                            @include styleText(0.75rem, $white, 146.69%, $sfPro);
+
+                            &:after {
+                                display: none;
+                            }
+                        }
+
+                        &-short-desc {
+                            display: none;
+                        }
+                    }
+                }
+
+                .list-item-right {
+                    margin-top: 20px;
+
+                    img {
+                        display: none;
+                    }
+
+                    &-text {
+                        &-title {
+                            @include styleText(0.75rem, $white, 146.69%, $sfPro);
+
+                            &:after {
+                                display: none;
+                            }
+                        }
+
+                        &-short-desc {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .section2-item {
+        gap: 5px;
+    }
+}

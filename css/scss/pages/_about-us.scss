@@ -1,0 +1,264 @@
+.about-us-banner-area {
+    background-image: url(../../../images/banner-ab.png);
+    min-height: 90vh;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+}
+
+.banner-left-area {
+    padding: 70px 0 120px 0;
+
+    &-logo {
+        display: flex;
+        align-items: flex-end;
+        gap: 40px;
+
+        span {
+            @include styleText(1.5rem, $white, 100%, $sfPro);
+        }
+    }
+
+    &-text {
+        margin-top: 60px;
+        @include styleText(1.25rem, $white, 46px, $sfPro);
+    }
+
+    .about-link {
+        margin-top: 40px;
+
+        &-item {
+            padding: 13px 20px 20px 15px;
+            border-radius: 4px;
+            align-items: center;
+            gap: 12px;
+
+            img {
+                width: 40px;
+            }
+
+            span {
+                @include styleText(16px, $white, 46px, $sfProHeavy);
+            }
+        }
+
+        .messenger {
+            background-color: #2062b9;
+        }
+
+        .shoppe {
+            background-color: #ff5722;
+        }
+    }
+}
+
+.about-section2-area {
+    padding: 60px 0 70px 0;
+
+    .about-section2-body {
+        margin-top: 45px;
+
+        &-item {
+            height: 270px;
+            padding: 35px 45px 25px 10px;
+            text-align: center;
+            border: 1px solid #dfdfdf;
+            border-radius: 4px;
+
+            &-heading {
+                font-weight: bold;
+                @include styleText(20px, $blueDark, 206.19%, $sfProHeavy);
+            }
+
+            &-text {
+                margin-top: 10px;
+
+                @include styleText(16px, $black, 24px, $sfPro);
+            }
+        }
+    }
+}
+
+.about-section2-heading {
+    font-weight: bold;
+    @include styleText(30px, $blueDark, 46px, $sfProHeavy);
+}
+
+.about-section3-area {
+    background-color: #f2f3f2;
+}
+
+.about-section3-wrap {
+    min-height: 600px;
+    background-image: url(../../../images/10.3.1.png);
+    background-repeat: no-repeat;
+
+    .about-section3-text {
+        padding-top: 90px;
+        height: 600px;
+        position: relative;
+        
+        &-heading {
+            white-space: nowrap;
+            font-weight: bold;
+
+            @include styleText(30px, $blueDark, 46px, $sfPro);
+        }
+
+        &-desc {
+            margin-top: 40px;
+
+            @include styleText(20px, $black, 46px, $sfPro);
+        }
+
+        .image-lotus {
+            position: absolute;
+            left: 40%;
+            bottom: -90px;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .about-us-banner-area {
+        min-height: 70vh;
+    }
+
+    .banner-left-area {
+        padding: 70px 20px 0 40px;
+
+        &-logo {
+            white-space: nowrap;
+        }
+    }
+
+    .about-section3-wrap {
+        background-position: -200px;
+
+        .about-section3-text {
+            padding-top: 40px;
+
+            &-heading {
+                white-space: pre-wrap;
+                @include styleText(2rem, $blueDark, 46px, $sfPro);
+            }
+
+            &-desc {
+                margin-top: 15px;
+                @include styleText(1.125rem, $black, 36px, $sfPro);
+            }
+        }
+    }
+
+    .image-lotus {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about-us-banner-area {
+        background-image: url(../../../images/banner-ab-mb.png);
+        background-position: 30%;
+    }
+
+    .banner-left-area {
+        height: 70vh;
+        background-color: rgba(#000000, 0.5);
+
+        &-text {
+            margin-top: 50px;
+            @include styleText(1rem, $white, 30px, $sfPro);
+        }
+    }
+
+    .about-section3-wrap {
+        background-position: -300px;
+
+        .about-section3-text {
+            padding-top: 40px;
+
+            .about-section3-text {
+                padding-top: 30px;
+                position: relative;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .banner-left-area {
+        padding: 80px 10px 0 20px;
+        height: 70vh;
+        background-color: rgba(#000000, 0.5);
+
+        &-logo {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 10px;
+
+            span {
+                @include styleText(1rem, $white, 100%, $sfPro);
+            }
+        }
+
+        &-text {
+            margin-top: 50px;
+            @include styleText(0.875rem, $white, 30px, $sfPro);
+        }
+
+        .about-link {
+            margin-top: 20px;
+
+            &-item {
+                padding: 10px;
+                border-radius: 4px;
+                align-items: center;
+
+                img {
+                    width: 25px;
+                }
+
+                span {
+                    @include styleText(0.875rem, $white, 46px, $sfProHeavy);
+                }
+            }
+        }
+    }
+
+    .about-section3-wrap {
+        min-height: 400px;
+        background-position: -300px;
+
+        .about-section3-text {
+            position: relative;
+
+            &-desc {
+                margin-top: 10px;
+
+                @include styleText(1rem, $black, 30px, $sfPro);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 538px) {
+    .about-section3-wrap {
+        min-height: 400px;
+        background-position: -400px;
+
+        .about-section3-text {
+            padding-top: 70px;
+            position: relative;
+
+            &-heading {
+                @include styleText(1.5rem, $blueDark, 30px, $sfPro);
+            }
+
+            &-desc {
+                margin-top: 10px;
+
+                @include styleText(0.875rem, $black, 30px, $sfPro);
+            }
+        }
+    }
+}

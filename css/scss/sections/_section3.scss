@@ -1,0 +1,44 @@
+.section3-wrap {
+    padding: 60px 0;
+}
+
+.section3-head {
+    border-bottom: 1px solid #DFDFDF;
+
+    &-title {
+        font-weight: bold;
+        letter-spacing: 0.11em;
+        text-transform: uppercase;
+        padding-bottom: 10px;
+
+        @include styleText (24px, $blueDark, "146.69%", $sfProHeavy);
+    }
+}
+
+.section3-body {
+    margin-top: 40px;
+}
+
+.section3-body-list-item {
+    margin-bottom: 25px;
+    gap: 20px;
+
+    img {
+        width: 100%;
+    }
+
+    &-text {
+        flex-basis: 50%;
+        .link-title {
+            font-weight: bold;
+            text-decoration: none;
+            @include styleText (16px, $black, "146.69%", $sfPro);
+        }
+
+        .short-desc {
+            margin-top: 8px;
+            
+            @include styleText(14px, $black, "146.69%", $sfPro)
+        }
+    }
+}
