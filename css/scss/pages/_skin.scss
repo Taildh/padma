@@ -32,7 +32,7 @@
 .skin-banner-area {
     min-height: 572px;
     background-repeat: no-repeat;
-    background-image: url("../../../images/skin-banner.png");
+    background-image: url("../../padma/images/skin-banner.png");
     background-size: cover;
     background-position: 50%;
 
@@ -43,7 +43,8 @@
             position: relative;
             padding: 35px 70px 25px 60px;
             clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%);
-            border-radius: 0 20px 30px 0;
+            border-bottom-right-radius: 70px;
+            border-top-right-radius: 15px;
 
             &-title {
                 font-weight: bold;

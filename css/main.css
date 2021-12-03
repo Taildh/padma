@@ -1,16 +1,11 @@
 @font-face {
   font-family: "sfpro";
-  src: url("../../../fonts/SFPRODISPLAY.otf");
-}
-
-@font-face {
-  font-family: "blank";
-  src: url("../../../fonts/Blanka-Regular.otf");
+  src: url("../../padma/fonts/SFPRODISPLAY.otf");
 }
 
 @font-face {
   font-family: "sfproheavy";
-  src: url("../../../fonts/SFPROBOLD.otf");
+  src: url("../../padma/fonts/SFPROBOLD.otf");
 }
 
 .sub-header {
@@ -297,7 +292,7 @@ footer {
 }
 
 .header-banner-area {
-  background-image: url("../../../../padma/images/banner-index.png");
+  background-image: url("../../padma/images/banner-index.png");
   min-height: 100vh;
   background-repeat: no-repeat;
   background-position: 50%;
@@ -617,7 +612,7 @@ footer {
 }
 
 .section2-area {
-  background-image: url("../../../images/section2.png");
+  background-image: url("../../padma/images/section2.png");
   min-height: 860px;
   background-repeat: no-repeat;
   background-position: center bottom;
@@ -1186,7 +1181,7 @@ footer {
 }
 
 .about-us-banner-area {
-  background-image: url(../../../images/banner-ab.png);
+  background-image: url("../../padma/images/banner-ab.png");
   min-height: 90vh;
   background-repeat: no-repeat;
   background-position: 50%;
@@ -1300,7 +1295,7 @@ footer {
 
 .about-section3-wrap {
   min-height: 600px;
-  background-image: url(../../../images/10.3.1.png);
+  background-image: url("../../padma/images/10.3.1.png");
   background-repeat: no-repeat;
 }
 
@@ -1525,7 +1520,7 @@ footer {
 .skin-banner-area {
   min-height: 572px;
   background-repeat: no-repeat;
-  background-image: url("../../../images/skin-banner.png");
+  background-image: url("../../padma/images/skin-banner.png");
   background-size: cover;
   background-position: 50%;
 }
@@ -1537,7 +1532,8 @@ footer {
   padding: 35px 70px 25px 60px;
   -webkit-clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%);
           clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%);
-  border-radius: 0 20px 30px 0;
+  border-bottom-right-radius: 70px;
+  border-top-right-radius: 15px;
 }
 
 .skin-banner-area .skin-banner-content .skin-banner-text-box-title {
